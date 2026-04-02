@@ -376,16 +376,19 @@ a:hover {
   background: rgba(74, 222, 128, 0.12);
 }
 
-.code-body {
+.code-body, pre.code-body {
+  display: block;
   padding: 18px 20px;
+  margin: 0;
   overflow-x: auto;
   font-family: var(--mono);
   font-size: 14px;
   line-height: 1.7;
   color: var(--text2);
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  white-space: pre;
   tab-size: 2;
+  background: transparent;
+  border: none;
 }
 
 .code-body::-webkit-scrollbar { height: 6px; }
@@ -724,6 +727,26 @@ td code {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
   margin: 20px 0;
+}
+
+/* Install methods */
+.install-method {
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.install-method h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--charm-purple);
+}
+
+.install-method .code-block {
+  margin: 0;
 }
 
 .feature-card {
