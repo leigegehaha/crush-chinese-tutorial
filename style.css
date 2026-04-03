@@ -532,12 +532,15 @@ code {
   margin: 20px 0;
   text-align: center;
   overflow-x: auto;
+  max-width: 100%;
 }
 
 .svg-wrap svg {
   max-width: 100%;
+  width: 100%;
   height: auto;
   filter: brightness(1.1);
+  display: block;
 }
 
 .svg-caption {
